@@ -41,7 +41,8 @@ CKPT_MAP = {
     "imagenet_256_classifier": "imagenet/256x256_classifier.pt",
     "imagenet_512_classifier": "imagenet/512x512_classifier.pt",
     "imagenet_512_cond": "imagenet/512x512_diffusion.pt",
-    "ffhq_256": "ffhq/ffhq_10m.pt",
+    # "ffhq_256": "ffhq/ffhq_10m.pt",
+    "ffhq_256": "ffhq/model.pt",
     "celebahq": "celebahq/celebahq_p2.pt",
     "lsun": "lsun/lsun_bedroom.pt",
 }

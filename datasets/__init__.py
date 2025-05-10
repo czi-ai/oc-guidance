@@ -3,7 +3,8 @@ import os
 import torch.distributed as dist
 from torch.utils.data import Dataset
 
-from datasets.ffhq import get_ffhq_dataset, get_ffhq_loader
+# from datasets.ffhq import get_ffhq_dataset, get_ffhq_loader
+from datasets.ffhq_direct import get_ffhq_dataset, get_ffhq_loader
 from datasets.imagenet import get_imagenet_dataset, get_imagenet_loader
 from datasets.kodak import get_kodak_dataset
 from datasets.celebahq import get_celeba_hq_dataset, get_celeba_hq_loader
@@ -51,7 +52,6 @@ def build_one_dataset(cfg, dataset_attr="dataset"):
 
 
 def build_loader(cfg, dataset_attr="dataset"):
-
     if type(dataset_attr) == list:
         dsets = []
         for da in dataset_attr:

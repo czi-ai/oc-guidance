@@ -13,7 +13,8 @@ def build_model(cfg):
     map_location = {"cuda:0": f"cuda:{dist.get_rank()}"}
     model_ckpt = ckpt_path_adm(cfg.model.ckpt, cfg)
     logger.info(f"Loading model from {model_ckpt}..")
-    model.load_state_dict(torch.load(model_ckpt, map_location=map_location))
+    model.load_state_dict(torch.load(model_ckpt, map_location=map_location,
+                                     weights_only=False))
     classifier = call(cfg.classifier)
 
     if getattr(cfg.classifier, "ckpt", None):

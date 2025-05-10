@@ -226,3 +226,8 @@ def main_dist(cfg: DictConfig):
 
 if __name__ == "__main__":
     main_dist()
+
+# python main.py     --config-name=ffhq256_uncond     diffusion=ddpm     classifier=none     algo=dps     algo.eta=0.5     algo.sigma_y=0.005     algo.grad_term_weight=1.0     deg=in2_random     deg.mask_prob=0.9     deg.mask_count=1000     loader=imagenet256_ddrm     loader.batch_size=1     loader.num_workers=0     dist.num_processes_per_node=1     dist.port=8000     exp.t_start=0     exp.t_end=1000     exp.num_steps=1000     exp.seed=0     exp.stride=ddpm_uniform     exp.root=/mnt/proj-pvc/projects/oc-guidance/expms     exp.name="exp"     exp.ckpt_root=/mnt/proj-pvc/projects/oc-guidance/ckpts     exp.samples_root="task=in2_random_lr=_eta=0.5_grad-term-weight=1.0_steps=1000"     exp.overwrite=True     exp.use_wandb=False     exp.save_ori=True     exp.save_deg=True     exp.smoke_test=0
+
+# python main.py --config-name=ffhq256_uncond diffusion=ddpm classifier=none algo=dps algo.eta=0.5 algo.sigma_y=0.005 algo.grad_term_weight=1.0 deg=in2_random deg.mask_prob=0.9 deg.mask_count=1000 loader=imagenet256_ddrm loader.batch_size=1 loader.num_workers=0 dist.num_processes_per_node=1 dist.port=8000 exp.t_start=0 exp.t_end=1000 exp.num_steps=1000 exp.seed=0 exp.stride=ddpm_uniform exp.root=/mnt/proj-pvc/projects/oc-guidance/expms exp.name="exp" exp.ckpt_root=/mnt/proj-pvc/projects/oc-guidance/ckpts exp.samples_root="task\=in2_random_lr\=_eta\=0.5_grad-term-weight\=1.0_steps\=1000" exp.overwrite=True exp.use_wandb=False exp.save_ori=True exp.save_deg=True exp.smoke_test=0
+
