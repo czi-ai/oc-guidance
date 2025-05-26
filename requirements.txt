@@ -6,7 +6,7 @@ lmdb==1.6.2
 matplotlib==3.10.1
 numpy==2.1.2
 omegaconf==2.3.0
-packaging==24.2
+packaging==25.0
 pandas==2.2.3
 pillow==11.0.0
 PyYAML==6.0.2
