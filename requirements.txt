@@ -29,4 +29,4 @@ tqdm==4.67.1
 triton==3.2.0
 urllib3==1.26.17
 wandb==0.19.9
-zipp==3.21.0
+zipp==3.23.0
