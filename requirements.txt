@@ -26,7 +26,7 @@ torchdiffeq==0.2.5
 torchvision
 torchmetrics==1.7.1
 tqdm==4.67.1
-triton==3.2.0
+triton==3.5.0
 urllib3==1.26.17
 wandb==0.19.9
 zipp==3.21.0
