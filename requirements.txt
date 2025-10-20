@@ -21,7 +21,7 @@ six==1.17.0
 smmap==5.0.2
 soupsieve==2.6
 sympy==1.13.1
-torch==2.6.0
+torch==2.9.0
 torchdiffeq==0.2.5
 torchvision
 torchmetrics==1.7.1
